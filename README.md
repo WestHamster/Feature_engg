@@ -1,6 +1,6 @@
 ## EDA
 1. Titanic Dataset
-
+2. Loading data - using different ways to load data
 
 
 
