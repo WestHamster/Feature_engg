@@ -1,7 +1,7 @@
 ## EDA
-1. Titanic Dataset
-2. Loading data - using different ways to load data
-
+1. Titanic Dataset (titanic_analysis.py)
+2. Loading data - using different ways to load data (loading_data.py)
+3. Data Preparation (data_prep.py)
 
 
 
