@@ -26,3 +26,14 @@ print(df2.groupby("Outcome").mean(),"\n\n")
 print(df2.groupby("Outcome").agg({"Glucose":"mean","BMI":"median","Age":"sum"}),"\n\n")
 #To find out how skewed data is and what are the outliers
 print(df2.groupby("Outcome").agg(["mean","median"]),"\n\n")
+
+positive = df2.loc[df2["Outcome"]==1]
+negative = df2.loc[df2["Outcome"]==0]
+
+print(positive.shape)
+print(negative.shape)
+
+#You can now save the clean data to a csv
+df2.to_csv("data_preparation/clean_data.csv",index=False)
+#index=False gives us without unnecessary index
+#Now you need to normalize because positive shape is different than negative
