@@ -17,7 +17,8 @@ print(data1.shape,data2.shape,"\n\n")
 
 mean, std = np.mean(data1), np.std(data1)
 z_score = np.abs((data1 - mean)/std)
-threshold = 3
+threshold = 3   # To tune the model use this to adjust points nearby it.
+#Z score - https://www.statisticshowto.com/probability-and-statistics/z-score/
 good = z_score < threshold
 
 print(f"Rejecting {(~good).sum()} points\n\n")
@@ -26,3 +27,6 @@ plt.scatter(data1[good],visual_scatter[good],s=2,label="Good",color="#4CAF50")
 plt.scatter(data1[~good],visual_scatter[~good],s=2,label="Bad",color="#F44336")
 plt.legend()
 plt.show()
+
+#Similarly we can use multivariate from scipy. Use the below link to understand
+#https://www.statisticshowto.com/probability-and-statistics/multivariate-analysis/
