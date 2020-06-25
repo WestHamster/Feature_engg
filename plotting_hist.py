@@ -3,8 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sn
 
-data1 = np.loadtxt('example_1.txt')
-data2 = np.loadtxt('example_2.txt')
+data1 = np.loadtxt('histogram/example_1.txt')
+data2 = np.loadtxt('histogram/example_2.txt')
 
 print(data1.shape," ",data2.shape)
 
