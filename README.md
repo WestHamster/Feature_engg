@@ -9,7 +9,9 @@
 8. Empirical CDF plotting (empirical_cdf.py)
 9. N-D plotting (N-D.py)
 10. Correlation plotting (correlation_plot.py)
-11. 2D Histogram plotting (2d_hist.py) 
+11. 2D Histogram plotting (2d_hist.py)
+12. Contour plotting (contour_plot.py)
+13. KDE plotting (kde_plot.py) 
 
 
 *(P.S. : You can use for further EDA in your project. Still working on it)*
