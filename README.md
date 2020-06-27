@@ -7,6 +7,9 @@
 6. Bee Swarm plotting (plotting_bee.py)
 7. Box and Violin plotting (box_violin.py)
 8. Empirical CDF plotting (empirical_cdf.py)
+9. N-D plotting (N-D.py)
+10. Correlation plotting (correlation_plot.py)
+11. 2D Histogram plotting (2d_hist.py) 
 
 
 *(P.S. : You can use for further EDA in your project. Still working on it)*
