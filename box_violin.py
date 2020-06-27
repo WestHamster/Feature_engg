@@ -3,8 +3,8 @@ import numpy as np
 import seaborn as sn
 import matplotlib.pyplot as plt
 
-data1 = np.loadtxt('histogram/example_1.txt')
-data2 = np.loadtxt('histogram/example_2.txt')
+data1 = np.loadtxt('box_violin/example_1.txt')
+data2 = np.loadtxt('box_violin/example_2.txt')
 
 dataset = pd.DataFrame({
     "value": np.concatenate((data1,data2)),

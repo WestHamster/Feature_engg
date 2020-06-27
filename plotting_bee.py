@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 import seaborn as sn
 
-data1 = np.loadtxt('histogram/example_1.txt')
-data2 = np.loadtxt('histogram/example_2.txt')
+data1 = np.loadtxt('bee_swarm/example_1.txt')
+data2 = np.loadtxt('bee_swarm/example_2.txt')
 
 dataset = pd.DataFrame({
     "value": np.concatenate((data1,data2)),
@@ -21,4 +21,4 @@ sn.swarmplot(x="type",y="value",data=dataset,size=2)
 #both data show strong peak but no bimodal distribution
 plt.show()
 #bee swarm plot becomes more effective as we have more categories
-#effective in sales sheet but lack scientific rigor for papers 
+#effective in sales sheet but lack scientific rigor for papers
