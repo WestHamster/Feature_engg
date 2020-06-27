@@ -1,6 +1,7 @@
 import numpy as np
 import seaborn as sn
 import matplotlib.pyplot as plt
+import pandas as pd
 
 #Emperical CDF
 #the more bins == the more noise
@@ -17,3 +18,6 @@ plt.plot(sd2,cdf,label="Data2 CDF")
 plt.hist(data1,histtype="step",density=True,alpha=0.3)
 plt.hist(data2,histtype="step",density=True,alpha=0.3)
 plt.legend()
+
+df = pd.DataFrame({"Data1":data1,"Data2":data2})
+df.describe()
