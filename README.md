@@ -11,7 +11,8 @@
 10. Correlation plotting (correlation_plot.py)
 11. 2D Histogram plotting (2d_hist.py)
 12. Contour plotting (contour_plot.py)
-13. KDE plotting (kde_plot.py) 
+13. KDE plotting (kde_plot.py)
+14. Scatter probability (scatter_probab.py) 
 
 
 *(P.S. : You can use for further EDA in your project. Still working on it)*
