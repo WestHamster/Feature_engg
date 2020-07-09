@@ -39,7 +39,8 @@ print(get_median([5,4,2,1,2]))
 median = np.median(data)
 print("Median")
 print(median)
-
+print()
+print()
 #MEANS ARE SENSETIVE TO OUTLIERS BUT MEDIANS ARE NOT
 
 outlier = np.insert(data,0,5000)
@@ -64,15 +65,19 @@ def get_mode(x):
 
 print(get_mode[1,7,5,6,3,1,1,2])
 """
+print()
 mode = st.mode(data)
+print("Mode")
 print(mode)
-
+print()
+print()
 #get bins for more numbers
 
 hist,edges = np.histogram(data,bins=100)
 edge_centers = 0.5 * (edges[1:] + edges[:-1]) #first to last
 mode = edge_centers[hist.argmax()]  #get the index of highest value in histogram
 #then get bin center for that and that is mode
+print("Mode using KDE")
 print(mode)
 
 #if you increase bins amount then mode changes
