@@ -105,8 +105,57 @@ print(get_k([1,10,4,3]))
 kurtosis = st.kurtosis(data,fisher=False)
 print("Kurtosis")
 print(kurtosis)
+print()
+print()
 #you won't get same results here from the function and st.kurtosis(), you have
 #to pass fisher=False which is normalisation of kurtosis
 
 #Problem while approximation is that data is Bi-Modal distribution and no
 #moment will take this into account
+
+
+#PERCENTILE
+
+ps = np.linspace(0,100,10)
+x_per = np.percentile(data,ps)
+
+xs = np.sort(data)
+ys = np.linspace(0 ,1 ,len(data))
+
+plt.plot(xs, ys * 100, label="ECDF")
+plt.plot(x_per,ps,label="Percentile",marker=".",ms=10)
+plt.legend()
+plt.ylabel("Percentile")
+plt.show()
+# Green - Emperical CDF
+# Yellow - 10 percentile for numpy to calculate
+# Difference in tails in curve because the data is linearly sampled.
+# Data seems to be Gaussian because of it's tails.
+# Loss of data at tails can be seen
+ps = 100 * st.norm.cdf(np.linspace(-3,3,30))
+x_per = np.percentile(data,ps)
+
+xs = np.sort(data)
+ys = np.linspace(0 ,1 ,len(data))
+
+plt.plot(xs, ys * 100, label="ECDF")
+plt.plot(x_per,ps,label="Percentile",marker=".",ms=10)
+plt.legend()
+plt.ylabel("Percentile")
+plt.show()
+#not much effort wasted at the tail part but to take tail to account,
+#add an insert value to ps
+ps = 100 * st.norm.cdf(np.linspace(-3,3,30))
+ps = np.insert(ps,0,0)
+ps = np.insert(ps,-1,100)
+x_per = np.percentile(data,ps)
+
+xs = np.sort(data)
+ys = np.linspace(0 ,1 ,len(data))
+
+plt.plot(xs, ys * 100, label="ECDF")
+plt.plot(x_per,ps,label="Percentile",marker=".",ms=10)
+plt.legend()
+plt.ylabel("Percentile")
+plt.show()
+#Tails covered in percentile
