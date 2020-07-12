@@ -16,6 +16,7 @@
 15. Measure of Central Tendency (characterising_1d.py)
 16. Variance, Skewness, Percentile (variation_ec.py)
 17. Correlation Study (multi_dist.py)
+18. Probability Distribution and Mass Function (Probability_pdf.py)
 
 
 *(P.S. : You can use for further EDA in your project. Still working on it)*
