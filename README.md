@@ -17,6 +17,7 @@
 16. Variance, Skewness, Percentile (variation_ec.py)
 17. Correlation Study (multi_dist.py)
 18. Probability Distribution and Mass Function (Probability_pdf.py)
+19. Empirical distribution (empirical_dist.py)
 
-
-*(P.S. : You can use for further EDA in your project. Still working on it)*
+*(P.S. : You can use for further EDA in your project. The work would be better
+  understood if you went from top to bottom)*
