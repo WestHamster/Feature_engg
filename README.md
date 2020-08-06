@@ -19,6 +19,7 @@
 18. Probability Distribution and Mass Function (Probability_pdf.py)
 19. Empirical distribution (empirical_dist.py)
 20. Sampling and it's different types (sampling_dist.py)
+21. Central Limit Theorem
 
 *(P.S. : You can use for further EDA in your project. The work would be better
   understood if you went from top to bottom)*
